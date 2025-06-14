@@ -15,3 +15,5 @@ logging.basicConfig(
     format="[ %(asctime)s ] %(lineno)d %(name)s - %(levelname)s - %(message)s",
     # datefmt='%Y-%m-%d %H:%M:%S'
 )
+
+logger=logging.getLogger(__name__)
