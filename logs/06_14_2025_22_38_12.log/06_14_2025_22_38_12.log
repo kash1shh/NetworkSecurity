@@ -1,0 +1,28 @@
+[ 2025-06-14 22:38:19,063 ] 19 networksecurity.logging.logger - INFO - Initiate the data ingestion
+[ 2025-06-14 22:38:22,595 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2025-06-14 22:38:22,596 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-06-14 22:38:22,596 ] 75 root - INFO - Exporting train and test file path.
+[ 2025-06-14 22:38:22,723 ] 84 root - INFO - Exported train and test file path.
+[ 2025-06-14 22:38:22,734 ] 25 networksecurity.logging.logger - INFO - Initiate the data Validation
+[ 2025-06-14 22:38:22,847 ] 32 root - INFO - Required number of columns:2
+[ 2025-06-14 22:38:22,848 ] 33 root - INFO - Data frame has columns:31
+[ 2025-06-14 22:38:22,848 ] 32 root - INFO - Required number of columns:2
+[ 2025-06-14 22:38:22,848 ] 33 root - INFO - Data frame has columns:31
+[ 2025-06-14 22:38:23,114 ] 27 networksecurity.logging.logger - INFO - data Validation Completed
+[ 2025-06-14 22:38:23,115 ] 31 networksecurity.logging.logger - INFO - data Transformation started
+[ 2025-06-14 22:38:23,115 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-06-14 22:38:23,115 ] 65 root - INFO - Starting data transformation
+[ 2025-06-14 22:38:23,250 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-06-14 22:38:23,250 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-06-14 22:38:23,268 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-06-14 22:38:23,273 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-06-14 22:38:23,273 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-06-14 22:38:23,277 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-06-14 22:38:23,279 ] 35 networksecurity.logging.logger - INFO - data Transformation completed
+[ 2025-06-14 22:38:23,279 ] 37 networksecurity.logging.logger - INFO - Model Training sstared
+[ 2025-06-14 22:46:34,562 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-06-14 22:46:34,634 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-06-14 22:46:34,634 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-06-14 22:46:34,684 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-06-14 22:46:34,685 ] 150 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\06_14_2025_22_38_13\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9908599707115083, precision_score=0.9894110528438886, recall_score=0.9923131384646505), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9858345308971463, precision_score=0.9824058919803601, recall_score=0.9892871858261227))
+[ 2025-06-14 22:46:34,690 ] 42 networksecurity.logging.logger - INFO - Model Training artifact created

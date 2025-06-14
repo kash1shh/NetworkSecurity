@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/54b9338cda6b4b9eb1672bb5d0742849/artifacts
+end_time: 1749920386982
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 54b9338cda6b4b9eb1672bb5d0742849
+run_name: redolent-hare-748
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749920125603
+status: 4
+tags: []
+user_id: krishnaik06

@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/d8c7bb7c351d44eea2a59e049510ac84/artifacts
+end_time: 1749919509916
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d8c7bb7c351d44eea2a59e049510ac84
+run_name: spiffy-midge-358
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749919499601
+status: 4
+tags: []
+user_id: krishnaik06

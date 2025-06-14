@@ -1,0 +1,22 @@
+[ 2025-06-14 21:18:45,381 ] 19 networksecurity.logging.logger - INFO - Initiate the data ingestion
+[ 2025-06-14 21:18:48,704 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2025-06-14 21:18:48,704 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-06-14 21:18:48,704 ] 75 root - INFO - Exporting train and test file path.
+[ 2025-06-14 21:18:48,839 ] 84 root - INFO - Exported train and test file path.
+[ 2025-06-14 21:18:48,849 ] 25 networksecurity.logging.logger - INFO - Initiate the data Validation
+[ 2025-06-14 21:18:48,945 ] 32 root - INFO - Required number of columns:2
+[ 2025-06-14 21:18:48,946 ] 33 root - INFO - Data frame has columns:31
+[ 2025-06-14 21:18:48,946 ] 32 root - INFO - Required number of columns:2
+[ 2025-06-14 21:18:48,946 ] 33 root - INFO - Data frame has columns:31
+[ 2025-06-14 21:18:49,188 ] 27 networksecurity.logging.logger - INFO - data Validation Completed
+[ 2025-06-14 21:18:49,188 ] 31 networksecurity.logging.logger - INFO - data Transformation started
+[ 2025-06-14 21:18:49,188 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-06-14 21:18:49,188 ] 65 root - INFO - Starting data transformation
+[ 2025-06-14 21:18:49,257 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-06-14 21:18:49,258 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-06-14 21:18:49,276 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-06-14 21:18:49,280 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-06-14 21:18:49,280 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-06-14 21:18:49,284 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-06-14 21:18:49,286 ] 35 networksecurity.logging.logger - INFO - data Transformation completed
+[ 2025-06-14 21:18:49,286 ] 37 networksecurity.logging.logger - INFO - Model Training sstared

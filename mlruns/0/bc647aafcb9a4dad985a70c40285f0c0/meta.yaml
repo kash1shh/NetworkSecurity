@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/0/bc647aafcb9a4dad985a70c40285f0c0/artifacts
+end_time: 1749917925153
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bc647aafcb9a4dad985a70c40285f0c0
+run_name: debonair-fish-138
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749917920051
+status: 4
+tags: []
+user_id: krishnaik06
