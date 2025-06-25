@@ -1,0 +1,26 @@
+[ 2025-06-25 23:53:34,748 ] 40 root - INFO - Start data Ingestion
+[ 2025-06-25 23:53:38,652 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2025-06-25 23:53:38,653 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-06-25 23:53:38,655 ] 75 root - INFO - Exporting train and test file path.
+[ 2025-06-25 23:53:38,860 ] 84 root - INFO - Exported train and test file path.
+[ 2025-06-25 23:53:38,861 ] 43 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\06_25_2025_23_47_53\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\06_25_2025_23_47_53\\data_ingestion\\ingested\\test.csv')
+[ 2025-06-25 23:53:38,896 ] 53 root - INFO - Initiate the data Validation
+[ 2025-06-25 23:53:39,050 ] 32 root - INFO - Required number of columns:2
+[ 2025-06-25 23:53:39,050 ] 33 root - INFO - Data frame has columns:31
+[ 2025-06-25 23:53:39,050 ] 32 root - INFO - Required number of columns:2
+[ 2025-06-25 23:53:39,050 ] 33 root - INFO - Data frame has columns:31
+[ 2025-06-25 23:53:39,672 ] 63 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-06-25 23:53:39,672 ] 65 root - INFO - Starting data transformation
+[ 2025-06-25 23:53:39,758 ] 48 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-06-25 23:53:39,759 ] 53 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-06-25 23:53:39,793 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-06-25 23:53:39,800 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-06-25 23:53:39,800 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2025-06-25 23:53:39,808 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-06-26 00:04:32,773 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=6, connect=6, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023979892020>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2025-06-26 00:04:39,688 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=5, connect=5, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000239798929B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2025-06-26 00:04:50,553 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=4, connect=4, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002397D7F1570>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2025-06-26 00:05:08,635 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=3, connect=3, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000239798A85E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2025-06-26 00:05:43,015 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=2, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000239798924D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2025-06-26 00:06:49,968 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=1, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000239798900A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
+[ 2025-06-26 00:08:52,017 ] 868 urllib3.connectionpool - WARNING - Retrying (Retry(total=0, connect=0, read=7, redirect=7, status=7)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023979892500>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/create
