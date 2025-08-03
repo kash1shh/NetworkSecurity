@@ -1,10 +1,6 @@
 # Network Security – Phishing URL Detection
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue) 
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-success) 
-![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-ff4b4b) 
-![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
 This project detects **phishing URLs** using a machine learning model trained on multiple website features (e.g., URL structure, SSL state, domain age).  
 
@@ -31,39 +27,42 @@ This project detects **phishing URLs** using a machine learning model trained on
 
 ---
 
-##  Project Structure
-
-<details>
-<summary>Click to view</summary>
-.
-├── app.py # FastAPI backend (API server)
-├── app_streamlit.py # Streamlit frontend (web UI)
-├── final_model/ # Pretrained ML models
-│ ├── model.pkl # Decision Tree model
-│ └── preprocessor.pkl # KNNImputer + feature pipeline
-├── data_schema/
-│ └── schema.yaml # Expected input schema
-├── prediction_output/ # Stores prediction results (created after first run)
-├── .github/
-│ └── workflows/
-│ └── main.yaml # GitHub Actions for CI/CD
-├── requirements.txt # Python dependencies
-├── Dockerfile # For containerizing the application
-├── README.md # Documentation
-└── test_input.csv # Sample test input
-
----
-
 ## ⚙️ Installation & Usage
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/NetworkSecurityProject.git
+git clone https://github.com/kash1shh/NetworkSecurityProject.git
 cd NetworkSecurityProject
+```
 
+### 2. Create & activate virtual environment
+```bash
 python -m venv .venv
 # Activate:
 .venv\Scripts\activate       # (Windows)
 source .venv/bin/activate    # (Mac/Linux)
+```
 
+### 3. Install dependencies
+```bash
 pip install -r requirements.txt
+```
+
+### 4. Run Streamlit frontend 
+```bash
+streamlit run app_streamlit.py
+```
+or  Run FastAPI backend
+```bash
+python app.py
+```
+
+### 6. Optional: Docker Build & Run
+```bash
+docker build -t network-security-app .
+docker run -p 8000:8000 network-security-app
+```
+###
+**[You can try the deployed application here.](https://networksecurity123.streamlit.app/)** 
+
+
