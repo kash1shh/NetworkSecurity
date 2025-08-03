@@ -36,7 +36,7 @@ PROJECT STRUCTURE
 INSTALLATION AND USAGE
 1. Clone the repository
 
-git clone https://github.com/<your-username>/NetworkSecurityProject.git
+git clone https://github.com/kash1shh/NetworkSecurityProject.git
 cd NetworkSecurityProject
 
 2. Create Virtual Environment
