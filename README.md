@@ -1,69 +1,69 @@
-Network Security - Phishing URL Detection
-This project detects phishing URLs using a machine learning model trained on multiple website features.
+# Network Security – Phishing URL Detection
 
-FEATURES
-Phishing detection: Predicts whether a URL is legitimate or malicious.
-FastAPI backend: REST API for programmatic access to predictions.
-Streamlit frontend: User-friendly web interface for uploading CSVs or manual input.
-Docker-ready: Configured to build and push images to AWS ECR.
-CI/CD: GitHub Actions workflow for automated integration and deployment.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue) 
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-success) 
+![Streamlit](https://img.shields.io/badge/Streamlit-Frontend-ff4b4b) 
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-HOW IT WORKS:
-1) Input: Website data (as CSV or JSON) with features like:
-having_IP_Address, SSLfinal_State, URL_Length, age_of_domain, etc.
+This project detects **phishing URLs** using a machine learning model trained on multiple website features (e.g., URL structure, SSL state, domain age).  
 
-2) Preprocessing: Missing values handled using KNNImputer.
 
-3) Prediction: Trained Decision Tree model predicts:
-1 → Phishing (malicious)
-0 → Legitimate (safe)
+---
 
-4) Output: CSV file with an added column predicted_column.
+##  Features
+- **Phishing detection**: Predicts whether a URL is legitimate or malicious.  
+- **FastAPI backend**: REST API for programmatic access to predictions.  
+- **Streamlit frontend**: User-friendly web interface for uploading CSVs or manual input.  
+- **Docker-ready**: Configured to build and push images to AWS ECR.  
+- **CI/CD**: GitHub Actions workflow for automated integration and deployment.  
 
-PROJECT STRUCTURE
+---
+
+##  How It Works
+1. **Input**: Website data (as CSV or JSON) with features like:
+   - `having_IP_Address`, `SSLfinal_State`, `URL_Length`, `age_of_domain`, etc.
+2. **Preprocessing**: Missing values handled using `KNNImputer`.  
+3. **Prediction**: Trained **Decision Tree** model predicts:
+   - `1` → **Phishing** (malicious)
+   - `0` → **Legitimate** (safe)
+4. **Output**: CSV file with an added column `predicted_column`.
+
+---
+
+##  Project Structure
+
+<details>
+<summary>Click to view</summary>
 .
-├── app.py                     # FastAPI backend
-├── app_streamlit.py           # Streamlit frontend
-├── final_model/               # Pretrained model & preprocessor
-│   ├── model.pkl
-│   └── preprocessor.pkl
-├── data_schema/schema.yaml    # Input data schema
-├── prediction_output/         # Stores prediction results
-├── .github/workflows/main.yaml# CI/CD pipeline
-├── requirements.txt           # Dependencies
-└── README.md                  # Project documentation
+├── app.py # FastAPI backend (API server)
+├── app_streamlit.py # Streamlit frontend (web UI)
+├── final_model/ # Pretrained ML models
+│ ├── model.pkl # Decision Tree model
+│ └── preprocessor.pkl # KNNImputer + feature pipeline
+├── data_schema/
+│ └── schema.yaml # Expected input schema
+├── prediction_output/ # Stores prediction results (created after first run)
+├── .github/
+│ └── workflows/
+│ └── main.yaml # GitHub Actions for CI/CD
+├── requirements.txt # Python dependencies
+├── Dockerfile # For containerizing the application
+├── README.md # Documentation
+└── test_input.csv # Sample test input
 
-INSTALLATION AND USAGE
-1. Clone the repository
+---
 
-git clone https://github.com/kash1shh/NetworkSecurityProject.git
+## ⚙️ Installation & Usage
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/<your-username>/NetworkSecurityProject.git
 cd NetworkSecurityProject
 
-2. Create Virtual Environment
-
 python -m venv .venv
-source .venv/bin/activate       # (Linux/Mac)
-.venv\Scripts\activate          # (Windows)
-
-3. Install Dependencies
+# Activate:
+.venv\Scripts\activate       # (Windows)
+source .venv/bin/activate    # (Mac/Linux)
 
 pip install -r requirements.txt
-
-4. Run the Streamlit App
-
-streamlit run app_streamlit.py
-
-Or run FastAPI backend:
-
-python app.py
-
-TECH STACK:
-Python (FastAPI, Streamlit, Scikit-learn, Pandas)
-
-AWS ECR (for container storage)
-
-GitHub Actions (CI/CD)
-
-Docker (containerization)
-
-
